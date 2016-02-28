@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Photon by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    	<script src="assets/js/firebase.js"></script>
+    	<script>
+   		$(document).ready(function() {
+	     	 var url = 'https://boiling-inferno-993.firebaseio.com';
+	     	 var firebaseRef = new Firebase(url);
+	     	 $('#submit').click(function (e) {
+	      	  	var hashtagInput = $('#hashtag').val();
+	      	  	console.log(hashtagInput);
+	      	  	firebaseRef.set({ hashtagInput: hashtag });
+	     	 });
+    	});
+
+    	</script>
+	</head>
+
+
+	<body>
+
+		<!-- Header -->
+			<section id="header">
+				<div class="inner">
+					<span class="icon major fa-cloud"></span>
+					<h1>¿WHOSE TALKING?</a></h1>
+					<p>Type in a hastag below and check out what kind of people are using that hastag in their very own tweets right now!.</p>
+					<ul class="actions">
+						<input type="text" name="hashtag" id="hashtag" placeholder="Type a hashtag" />
+						<button id="submit">Discover</button>
+
+					</ul>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>Most Popular Words<br />
+								Being used Right Now</h2>
+							</header>
+							<p>Arist.  Musician.  Executive.  Poet.  Student.  Socialite.  Cowboy.  Alien.   </p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+							<span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="main style2">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<ul class="major-icons">
+								<li><span class="icon style1 major fa-twitter"></span></li>
+								<li><span class="icon style2 major fa-camera-retro"></span></li>
+								<li><span class="icon style3 major fa-institution"></span></li>
+								<li><span class="icon style4 major fa-flask"></span></li>
+								<li><span class="icon style5 major fa-bar-chart-o"></span></li>
+								<li><span class="icon style6 major fa-gavel"></span></li>
+							</ul>
+						</div>
+						<div class="6u$ 12u$(medium)">
+							<header class="major">
+								<h2>How Does It Work?</h2>
+							</header>
+							<p>Wonder what kind of people are rooting for Donald this November, or whose feeling the Bern? What kind of people are talking about the latest Kardashian drama, or the newest movies out. Curious about whose talking about the latest scienctific discovery or controversial law that got passed?</p>
+							<p><i>Whose Talking</i> takes in the user's searched hastag, scans live twitter feed tweet by tweet, checking who is writing each tweet and then accesses there bio. It then parses their bio looking for key descriptive words, and does this on every user who recently posted a tweet using the searched hashtag. It keeps track of all the reoccurring words in the different people's bios giving you key information about the type of people who use any given hastag.</p>
+							<p>This has countless applications for marketing, social experimentation, ad targeting and innate human curiosity.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Three 
+			<section id="three" class="main style1 special">
+				<div class="container">
+					<header class="major">
+						<h2>Adipiscing amet consequat</h2>
+					</header>
+					<p>Ante nunc accumsan et aclacus nascetur ac ante amet sapien sed.</p>
+					<div class="row 150%">
+						<div class="4u 12u$(medium)">
+							<span class="image fit"><img src="images/pic02.jpg" alt="" /></span>
+							<h3>Magna feugiat lorem</h3>
+							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
+							<ul class="actions">
+								<li><a href="#" class="button">More</a></li>
+							</ul>
+						</div>
+						<div class="4u 12u$(medium)">
+							<span class="image fit"><img src="images/pic03.jpg" alt="" /></span>
+							<h3>Magna feugiat lorem</h3>
+							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
+							<ul class="actions">
+								<li><a href="#" class="button">More</a></li>
+							</ul>
+						</div>
+						<div class="4u$ 12u$(medium)">
+							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+							<h3>Magna feugiat lorem</h3>
+							<p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
+							<ul class="actions">
+								<li><a href="#" class="button">More</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+-->
+		<!-- Four -->
+			<section id="four" class="main style1 special">
+				<div class="container">
+					<header class="major">
+						<h2>Love our app? Let us know!</h2>
+					</header>
+					<p>We love to hear back from you guys. check out our links below our just click away youre feelings.</p>
+					<ul class="actions uniform">
+						<li><a href="#" class="button like">Like it</a></li>
+						<li><a href="#" class="button love">Love it</a></li>
+						<li><a href="#" class="button meh ">Meh </a></li>
+					</ul>
+				</div>
+			</section>
+
+		
+		<!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
