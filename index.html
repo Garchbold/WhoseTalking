@@ -10,12 +10,12 @@
     	<script src="assets/js/firebase.js"></script>
     	<script>
    		$(document).ready(function() {
-	     	 var url = 'https://boiling-inferno-993.firebaseio.com/hashtag';
+	     	 var url = 'https://boiling-inferno-993.firebaseio.com';
 	     	 var firebaseRef = new Firebase(url);
 	     	 $('#submit').click(function (e) {
 	      	  	var hashtagInput = $('#hashtag').val();
 	      	  	console.log(hashtagInput);
-	      	  	firebaseRef.set(hashtagInput);
+	      	  	firebaseRef.set({ hashtagInput: hashtag });
 	     	 });
     	});
 
@@ -50,22 +50,12 @@
 							</header>
 							<p>Arist.  Musician.  Executive.  Poet.  Student.  Socialite.  Cowboy.  Alien.   </p>
 						</div>
-						<div class="6u$ 12u$(medium) important(medium)" id="topwords">
+						<div class="6u$ 12u$(medium) important(medium)">
 							<span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
 						</div>
 					</div>
 				</div>
 			</section>
-			<script>
-				function getWords() {
-					$.get("files.txt", function(data){
-						console.log(data);
-						$('#topwords').html(data);
-					});
-				}
-				setInterval(getWords, 1000);
-
-			</script>
 
 		<!-- Two -->
 			<section id="two" class="main style2">
